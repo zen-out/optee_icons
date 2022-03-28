@@ -7,17 +7,14 @@
 
 ```js
 npm install optee_icons
-const optee_icons =  require('optee_icons')
-```
-
-## If utilizing in html...: 
-```html
-<script src="./node_modules/optee_icons/index.js"></script>
-<script> 
-$(()=> { 
-     const output =  optee_icons.method(parameter)
- })
-</script>
+const {generateFonts} =  require('optee_icons')
+const config = {
+    name: 'icons',
+    inputDir: src,
+    outputDir: dist,
+    fontTypes: ['woff2']
+}
+generateFonts(config)
 ```
 
 
