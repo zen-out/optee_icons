@@ -1,0 +1,21 @@
+{
+    "name": "optee_icons",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "play": "node playground.js",
+        "push": "git add . && git commit -m 'updated' && git push",
+        "deploy": "npm version patch && npm publish",
+        "update": "ncu --upgrade"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@types/node": "^17.0.23",
+        "fantasticon": "^1.2.3",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.3"
+    }
+}
